@@ -36,7 +36,7 @@ const App = () => {
       };
 
       const response = await fetch(
-        "https://geminiaichatbot.onrender.com/",
+        "http://localhost:8000/gemini",
         options
       );
       const data = await response.text();

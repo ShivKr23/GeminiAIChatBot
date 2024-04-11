@@ -35,7 +35,10 @@ const App = () => {
         },
       };
 
-      const response = await fetch("http://localhost:8000/gemini", options);
+      const response = await fetch(
+        "https://geminiaichatbot.onrender.com/",
+        options
+      );
       const data = await response.text();
       console.log(data);
       setChatHistory((oldChatHistory) => [
